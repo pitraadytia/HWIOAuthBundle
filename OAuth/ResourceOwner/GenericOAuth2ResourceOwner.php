@@ -144,6 +144,11 @@ class GenericOAuth2ResourceOwner extends AbstractResourceOwner
      */
     public function handles(Request $request)
     {
+        //handle php 7
+        if ($request->query->has('?code')) {
+            $request->query->set('code',$request->query->get('?code'));
+        }
+
         return $request->query->has('code');
     }
 
