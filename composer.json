@@ -89,11 +89,11 @@
 
     "require": {
         "php":                          ">=5.3.3",
-        "symfony/framework-bundle":     "~3.1",
-        "symfony/security-bundle":      "~3.1",
-        "symfony/options-resolver":     "~3.1",
-        "symfony/form":                 "~3.1",
-        "symfony/yaml":                 "~3.1",
+        "symfony/framework-bundle":     "~3.0",
+        "symfony/security-bundle":      "~3.0",
+        "symfony/options-resolver":     "~3.0",
+        "symfony/form":                 "~3.0",
+        "symfony/yaml":                 "~3.0",
         "kriswallsmith/buzz":           "~0.13"
     },
 
