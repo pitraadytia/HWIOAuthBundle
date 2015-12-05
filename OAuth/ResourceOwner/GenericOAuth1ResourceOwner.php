@@ -122,6 +122,10 @@ class GenericOAuth1ResourceOwner extends AbstractResourceOwner
      */
     public function handles(Request $request)
     {
+         if ($request->query->has('?oauth_token')) {
+            $request->query->set('oauth_token',$request->query->get('?oauth_token'));
+        }
+
         return $request->query->has('oauth_token');
     }
 
